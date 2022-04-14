@@ -1,15 +1,31 @@
 /**
- * Calcs distance between two points
+ * Calcs distance between the center of two points
  * @param { int } x1 - x coordinate of object 1
  * @param { int } y1 - y coordinate of object 1
  * @param { int } x2 - x coordinate of object 2
  * @param { int } y2 - y coordinate of object 2
+ * @return { float } distance between the center of two objects
  **/
 export function distance(x1, y1, x2, y2) {
   const xDist = x2 - x1;
   const yDist = y2 - y1;
 
   return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
+}
+
+/**
+ * Determines if two objects have collided at their borders
+ * @param { float } disatnce - distance between the center of two objects
+ * @param { int } r1 - radius ( or area ) of object 1
+ * @param { int } x2 - radius ( or area ) of object 2
+ * @return { boolean } true or false based on if items have collided
+ **/
+export function collision(distance, r1, r2) {
+  if (distance < r1 + r2) {
+    return true;
+  }
+
+  return false;
 }
 
 /**

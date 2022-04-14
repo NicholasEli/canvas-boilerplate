@@ -1,10 +1,10 @@
 /**
  * Circle Class
- * @param { class } Canvas Class
- * @param { int } x coordinate
- * @param { int } y cooridnate
- * @param { int } radius of circle
- * @param { string } color of cirlce
+ * @param { class } canvas - Canvas Class
+ * @param { int } x - x coordinate
+ * @param { int } y - y cooridnate
+ * @param { int } r - radius of circle
+ * @param { string } color - color of cirlce
  **/
 export default class Circle {
 	constructor(canvas, x, y, radius, color) {
