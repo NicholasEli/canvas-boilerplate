@@ -1,5 +1,6 @@
 import Canvas from './Canvas.js';
 import Cirlce from './Circle.js';
+import Rectangle from './Rectangle.js';
 import { animate, distance, collision } from './utils.js';
 
 window.onload = function () {
@@ -19,39 +20,6 @@ window.onload = function () {
 	);
 	circle2.draw();
 
-	/**
-	 * Animate circles for collision
-		let reverse = false;
-		animate(
-			canvas,
-			() => {
-				const d = distance(circle1.x, circle1.y, circle2.x, circle2.y);
-
-				if (collision(d, circle1.radius, circle2.radius)) {
-					reverse = true;
-				}
-
-				if (circle1.x <= 0 || (circle1.x > 0 && !reverse)) {
-					reverse = false;
-					circle1.x = circle1.x + 1;
-					circle1.y = circle1.y + 1;
-
-					circle2.x = circle2.x - 1;
-					circle2.y = circle2.y - 1;
-				}
-
-				if (reverse) {
-					circle1.x = circle1.x - 1;
-					circle1.y = circle1.y - 1;
-
-					circle2.x = circle2.x + 1;
-					circle2.y = circle2.y + 1;
-				}
-
-				circle1.update();
-				circle2.update();
-			},
-			false
-		);
-	**/
+	const rectangle = new Rectangle(canvas, 0, canvas.dimensions.height - 30, 60, 30, 'green');
+	rectangle.draw();
 };
