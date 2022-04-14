@@ -1,5 +1,6 @@
 import Canvas from './Canvas.js';
 import Cirlce from './Circle.js';
+import { animate, distance } from './utils.js';
 
 window.onload = function () {
 	console.log('--Loading Javascript');
