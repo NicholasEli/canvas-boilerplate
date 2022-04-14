@@ -6,6 +6,7 @@ window.onload = function () {
 	const canvas = new Canvas();
 	canvas.init();
 
-	const circle1 = new Cirlce(10, 10, 10, '#ff0000');
+	const dims = 30;
+	const circle1 = new Cirlce(canvas.ctx, 30, 30, 30, '#ff0000');
 	circle1.draw();
 };
