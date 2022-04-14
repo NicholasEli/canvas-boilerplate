@@ -45,10 +45,10 @@ window.onload = function () {
 
 	const image2 = new Image(
 		canvas,
-		0,
-		0,
-		character.width / 2,
-		character.height / 2,
+		character.width / 2 - 50,
+		character.height / 2 - 50,
+		character.width / 4.3,
+		character.height / 4.3,
 		canvas.dimensions.width / 2,
 		canvas.dimensions.height / 2 + 50,
 		50,
