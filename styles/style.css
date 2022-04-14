@@ -1,3 +1,7 @@
 canvas {
 	background-color: lightgray;
 }
+
+#assets {
+	display: none;
+}
